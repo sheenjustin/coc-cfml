@@ -105,14 +105,14 @@ export function resolveRelativePath(baseUri: Uri, appendingPath: string): string
  * @param appendingPath A path appended to the resolved root path
  */
 export function resolveRootPath(baseUri: Uri, appendingPath: string): string | undefined {
-  const root: WorkspaceFolder = workspace.getWorkspaceFolder(baseUri);
+  const root: WorkspaceFolder = workspace.getWorkspaceFolder(baseUri.toString());
 
   // When baseUri is not in workspace
   if (!root) {
     return undefined;
   }
 
-  return path.join(root.uri.fsPath, appendingPath);
+  return path.join(Uri.parse(root.uri).fsPath, appendingPath);
 }
 
 /**
@@ -123,7 +123,7 @@ export function resolveRootPath(baseUri: Uri, appendingPath: string): string | u
 export function resolveCustomMappingPaths(baseUri: Uri, appendingPath: string): string[] {
   const customMappingPaths: string[] = [];
 
-  const cfmlMappings: CFMLMapping[] = workspace.getConfiguration("cfml", baseUri).get<CFMLMapping[]>("mappings", []);
+  const cfmlMappings: CFMLMapping[] = workspace.getConfiguration("cfml", baseUri.toString()).get<CFMLMapping[]>("mappings", []);
   const normalizedPath: string = appendingPath.replace(/\\/g, "/");
   for (const cfmlMapping of cfmlMappings) {
     const slicedLogicalPath: string = cfmlMapping.logicalPath.slice(1);

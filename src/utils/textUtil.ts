@@ -1,4 +1,4 @@
-import { MarkdownString, Range, TextDocument, Position } from "coc.nvim";
+import { Range, TextDocument, Position, Uri, MarkedString } from "coc.nvim";
 import { getDocumentContextRanges, isCfcFile } from "./contextUtil";
 import { getComponent, hasComponent } from "../features/cachedEntities";
 import { AttributeQuoteType } from "../entities/attribute";
@@ -52,8 +52,8 @@ export function textToMarkdownCompatibleString(text: string): string {
  * Transforms text to MarkdownString
  * @param text A candidate string
  */
-export function textToMarkdownString(text: string): MarkdownString {
-  return new MarkdownString(textToMarkdownCompatibleString(text));
+export function textToMarkdownString(text: string): MarkedString {
+  return textToMarkdownCompatibleString(text);
 }
 
 /**
@@ -93,7 +93,7 @@ export function getSanitizedDocumentText(document: TextDocument, commentRanges?:
   if (commentRanges) {
     documentCommentRanges = commentRanges;
   } else {
-    const docIsScript: boolean = (isCfcFile(document) && hasComponent(document.uri) && getComponent(document.uri).isScript);
+    const docIsScript: boolean = (isCfcFile(document) && hasComponent(Uri.parse(document.uri)) && getComponent(Uri.parse(document.uri)).isScript);
     documentCommentRanges = getDocumentContextRanges(document, docIsScript).commentRanges;
   }
 
