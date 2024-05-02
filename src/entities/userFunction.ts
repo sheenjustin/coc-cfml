@@ -1,6 +1,6 @@
 import * as path from "path";
 import { DataType } from "./dataType";
-import { Location, Uri, TextDocument, Position, Range } from "vscode";
+import { Location, Uri, TextDocument, Position, Range } from "coc.nvim";
 import { Function, getScriptFunctionArgRanges } from "./function";
 import { Parameter } from "./parameter";
 import { Signature } from "./signature";

@@ -1,6 +1,6 @@
 import { CompletionEntry } from "../features/completionItemProvider";
 import { DocumentStateContext } from "../utils/documentUtil";
-import { TextDocument, Range } from "vscode";
+import { TextDocument, Range } from "coc.nvim";
 import { getClosingPosition, getCfScriptRanges } from "../utils/contextUtil";
 import { parseTags, Tag } from "./tag";
 

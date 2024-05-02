@@ -1,5 +1,5 @@
 
-import { DocumentColorProvider, TextDocument, CancellationToken, Range, Color, ColorPresentation, TextEdit, ColorInformation } from "vscode";
+import { DocumentColorProvider, TextDocument, CancellationToken, Range, Color, ColorPresentation, TextEdit, ColorInformation } from "coc.nvim";
 import { getCssRanges, isInCfOutput } from "../utils/contextUtil";
 import { getDocumentStateContext, DocumentStateContext } from "../utils/documentUtil";
 import { cssPropertyPattern } from "../entities/css/property";

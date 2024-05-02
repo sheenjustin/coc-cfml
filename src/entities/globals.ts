@@ -1,4 +1,4 @@
-import { SnippetString } from "vscode";
+import { SnippetString } from "coc.nvim";
 import { MyMap, NameWithOptionalValue } from "../utils/collections";
 import { ATTRIBUTES_PATTERN, IncludeAttributesSetType, AttributeQuoteType } from "./attribute";
 import { DataType } from "./dataType";

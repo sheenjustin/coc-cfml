@@ -1,4 +1,4 @@
-import { Range, TextDocument } from "vscode";
+import { Range, TextDocument } from "coc.nvim";
 import { MyMap, MySet, NameWithOptionalValue } from "../utils/collections";
 
 export const ATTRIBUTES_PATTERN = /\b([\w:-]+)\b(?:(\s*(?:=|:)\s*)(?:(['"])(.*?)\3|([\w$:.]+)))?/gi;

@@ -1,6 +1,6 @@
 /** Adopted from https://github.com/Microsoft/vscode-css-languageservice/blob/27f369f0d527b1952689e223960f779e89457374/src/cssLanguageTypes.ts */
 
-import { Range, Position } from "vscode";
+import { Range, Position } from "coc.nvim";
 
 export interface PropertyCompletionContext {
   propertyName: string;

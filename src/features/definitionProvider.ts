@@ -1,4 +1,4 @@
-import { DefinitionProvider, TextDocument, Position, CancellationToken, DefinitionLink, Uri, Range, workspace, WorkspaceConfiguration } from "vscode";
+import { DefinitionProvider, TextDocument, Position, CancellationToken, DefinitionLink, Uri, Range, workspace, WorkspaceConfiguration } from "coc.nvim";
 import { objectReferencePatterns, ReferencePattern, Component } from "../entities/component";
 import { componentPathToUri, getComponent, searchAllFunctionNames } from "./cachedEntities";
 import { Scope, getValidScopesPrefixPattern, getVariableScopePrefixPattern, unscopedPrecedence } from "../entities/scope";

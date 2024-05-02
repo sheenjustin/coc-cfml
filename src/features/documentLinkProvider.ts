@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
-import { CancellationToken, DocumentLink, DocumentLinkProvider, Position, Range, TextDocument, Uri, workspace, WorkspaceFolder } from "vscode";
+import { CancellationToken, DocumentLink, DocumentLinkProvider, Position, Range, TextDocument, Uri, workspace, WorkspaceFolder } from "coc.nvim";
 import { isUri } from "../utils/textUtil";
 
 export default class CFMLDocumentLinkProvider implements DocumentLinkProvider {

@@ -1,6 +1,6 @@
 /** Adopted from https://github.com/Microsoft/vscode-html-languageservice/blob/600d3fc04a2db260df174526b5e71965c170e638/src/htmlLanguageTypes.ts */
 
-import { TextDocument, Position, Range } from "vscode";
+import { TextDocument, Position, Range } from "coc.nvim";
 
 export interface HTMLFormatConfiguration {
   tabSize?: number;

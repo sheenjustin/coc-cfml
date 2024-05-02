@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
-import { CancellationToken, Command, CompletionContext, CompletionItem, CompletionItemKind, CompletionItemProvider, Position, Range, SnippetString, TextDocument, Uri, workspace, WorkspaceConfiguration } from "vscode";
+import { CancellationToken, Command, CompletionContext, CompletionItem, CompletionItemKind, CompletionItemProvider, Position, Range, SnippetString, TextDocument, Uri, workspace, WorkspaceConfiguration } from "coc.nvim";
 import { AttributeQuoteType, Attributes, IncludeAttributesCustom, IncludeAttributesSetType, parseAttributes, VALUE_PATTERN } from "../entities/attribute";
 import { CatchInfo, catchProperties, CatchPropertyDetails, parseCatches } from "../entities/catch";
 import { cgiVariables } from "../entities/cgi";

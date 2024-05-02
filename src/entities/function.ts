@@ -4,7 +4,7 @@ import { UserFunction } from "./userFunction";
 import { COMPONENT_EXT } from "./component";
 import * as path from "path";
 import { DocumentStateContext } from "../utils/documentUtil";
-import { Range, TextDocument, Position } from "vscode";
+import { Range, TextDocument, Position } from "coc.nvim";
 import { getNextCharacterPosition } from "../utils/contextUtil";
 
 const functionSuffixPattern: RegExp = /^\s*\(([^)]*)/;

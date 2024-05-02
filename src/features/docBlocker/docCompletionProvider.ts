@@ -1,6 +1,6 @@
 import {
   TextDocument, Position, CancellationToken, CompletionItem, CompletionItemProvider, Range, CompletionItemKind
-} from "vscode";
+} from "coc.nvim";
 import Documenter from "./documenter";
 import { Component } from "../../entities/component";
 import { getComponent, getGlobalTag } from "../cachedEntities";

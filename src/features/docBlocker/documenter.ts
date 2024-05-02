@@ -1,4 +1,4 @@
-import { Position, SnippetString, TextDocument } from "vscode";
+import { Position, SnippetString, TextDocument } from "coc.nvim";
 import FunctionBlock from "./block/function";
 import Property from "./block/property";
 import Component from "./block/component";

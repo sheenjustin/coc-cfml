@@ -3,7 +3,7 @@ import * as path from "path";
 import {
   commands, ConfigurationChangeEvent, ConfigurationTarget, DocumentSelector, ExtensionContext, extensions,
   FileSystemWatcher, IndentAction, languages, TextDocument, Uri, window, workspace, WorkspaceConfiguration
-} from "vscode";
+} from "coc.nvim";
 import { COMPONENT_FILE_GLOB } from "./entities/component";
 import { Scope } from "./entities/scope";
 import { decreasingIndentingTags, goToMatchingTag, nonClosingTags, nonIndentingTags } from "./entities/tag";

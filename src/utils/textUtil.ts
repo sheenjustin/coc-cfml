@@ -1,4 +1,4 @@
-import { MarkdownString, Range, TextDocument, Position } from "vscode";
+import { MarkdownString, Range, TextDocument, Position } from "coc.nvim";
 import { getDocumentContextRanges, isCfcFile } from "./contextUtil";
 import { getComponent, hasComponent } from "../features/cachedEntities";
 import { AttributeQuoteType } from "../entities/attribute";

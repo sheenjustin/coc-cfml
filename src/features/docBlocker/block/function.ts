@@ -1,6 +1,6 @@
 import { Block } from "../block";
 import { Doc, DocType } from "../doc";
-import { Position } from "vscode";
+import { Position } from "coc.nvim";
 import { UserFunction, UserFunctionSignature, Argument } from "../../../entities/userFunction";
 
 /**

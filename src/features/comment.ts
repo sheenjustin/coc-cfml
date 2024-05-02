@@ -1,4 +1,4 @@
-import { Position, languages, commands, window, TextEditor, LanguageConfiguration, TextDocument, CharacterPair } from "vscode";
+import { Position, languages, commands, window, TextEditor, LanguageConfiguration, TextDocument, CharacterPair } from "coc.nvim";
 import { LANGUAGE_ID } from "../cfmlMain";
 import { isInCfScript, isCfcFile } from "../utils/contextUtil";
 import { getComponent, hasComponent } from "./cachedEntities";

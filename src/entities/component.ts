@@ -1,7 +1,7 @@
 import findup from "findup-sync";
 import * as fs from "fs";
 import * as path from "path";
-import { Position, Range, TextDocument, Uri } from "vscode";
+import { Position, Range, TextDocument, Uri } from "coc.nvim";
 import * as cachedEntities from "../features/cachedEntities";
 import { getComponent, hasComponent } from "../features/cachedEntities";
 import { MySet } from "../utils/collections";

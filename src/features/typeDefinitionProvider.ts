@@ -1,4 +1,4 @@
-import { TypeDefinitionProvider, TextDocument, Position, CancellationToken, Definition, Range, Location } from "vscode";
+import { TypeDefinitionProvider, TextDocument, Position, CancellationToken, Definition, Range, Location } from "coc.nvim";
 import { Component } from "../entities/component";
 import { getComponent } from "./cachedEntities";
 import { Scope, getValidScopesPrefixPattern, getVariableScopePrefixPattern, unscopedPrecedence } from "../entities/scope";

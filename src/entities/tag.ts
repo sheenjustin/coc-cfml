@@ -1,4 +1,4 @@
-import { Position, Range, Selection, TextDocument, TextEditor, window } from "vscode";
+import { Position, Range, Selection, TextDocument, TextEditor, window } from "coc.nvim";
 import { getGlobalTag } from "../features/cachedEntities";
 import { StringContext, isStringDelimiter } from "../utils/contextUtil";
 import { DocumentPositionStateContext, DocumentStateContext, getDocumentPositionStateContext } from "../utils/documentUtil";

@@ -1,6 +1,6 @@
 import * as semver from "semver";
 import { DataType } from "../../entities/dataType";
-import { Uri } from "vscode";
+import { Uri } from "coc.nvim";
 import { extensionContext } from "../../cfmlMain";
 
 export enum CFMLEngineName {

@@ -2,7 +2,7 @@ import * as fs from "fs";
 import * as path from "path";
 import { COMPONENT_EXT } from "../entities/component";
 import { equalsIgnoreCase } from "./textUtil";
-import { Uri, workspace, WorkspaceFolder } from "vscode";
+import { Uri, workspace, WorkspaceFolder } from "coc.nvim";
 
 export interface CFMLMapping {
   logicalPath: string;

@@ -1,4 +1,4 @@
-import { Position, Range, TextDocument, WorkspaceConfiguration, workspace } from "vscode";
+import { Position, Range, TextDocument, WorkspaceConfiguration, workspace } from "coc.nvim";
 import { Component, isScriptComponent } from "../entities/component";
 import { getComponent } from "../features/cachedEntities";
 import { CFMLEngine, CFMLEngineName } from "./cfdocs/cfmlEngine";

@@ -1,4 +1,4 @@
-import { Uri } from "vscode";
+import { Uri } from "coc.nvim";
 import { equalsIgnoreCase } from "../utils/textUtil";
 import { componentPathToUri } from "./component";
 import { queryValuePattern } from "./query";

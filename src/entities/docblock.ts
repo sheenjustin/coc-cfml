@@ -1,4 +1,4 @@
-import { Range, TextDocument } from "vscode";
+import { Range, TextDocument } from "coc.nvim";
 
 // If the key has no value, the last letter is ignored
 const DOC_PATTERN: RegExp = /(\n\s*(?:\*[ \t]*)?(?:@(\w+)(?:\.(\w+))?)?[ \t]*)(\S.*)/gi;

@@ -1,4 +1,4 @@
-import { CancellationToken, ParameterInformation, Position, Range, SignatureHelp, SignatureHelpProvider, SignatureInformation, TextDocument, Uri, workspace, WorkspaceConfiguration, SignatureHelpContext } from "vscode";
+import { CancellationToken, ParameterInformation, Position, Range, SignatureHelp, SignatureHelpProvider, SignatureInformation, TextDocument, Uri, workspace, WorkspaceConfiguration, SignatureHelpContext } from "coc.nvim";
 import { Component, objectNewInstanceInitPrefix } from "../entities/component";
 import { DataType } from "../entities/dataType";
 import { constructSyntaxString, Function, getScriptFunctionArgRanges } from "../entities/function";

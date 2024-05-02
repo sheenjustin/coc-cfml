@@ -1,5 +1,5 @@
 import * as path from "path";
-import { CancellationToken, Location, Position, SymbolInformation, SymbolKind, TextDocument, TextEditor, Uri, window, workspace, WorkspaceSymbolProvider } from "vscode";
+import { CancellationToken, Location, Position, SymbolInformation, SymbolKind, TextDocument, TextEditor, Uri, window, workspace, WorkspaceSymbolProvider } from "coc.nvim";
 import { LANGUAGE_ID } from "../cfmlMain";
 import { Component, COMPONENT_EXT } from "../entities/component";
 import { UserFunction } from "../entities/userFunction";

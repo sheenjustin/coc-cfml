@@ -1,4 +1,4 @@
-import { CancellationToken, DocumentSymbolProvider, Position, Range, DocumentSymbol, SymbolKind, TextDocument } from "vscode";
+import { CancellationToken, DocumentSymbolProvider, Position, Range, DocumentSymbol, SymbolKind, TextDocument } from "coc.nvim";
 import { Component } from "../entities/component";
 import { Property } from "../entities/property";
 import { getLocalVariables, UserFunction } from "../entities/userFunction";

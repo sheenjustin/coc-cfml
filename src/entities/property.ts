@@ -1,4 +1,4 @@
-import { Location, Range, TextDocument, Uri } from "vscode";
+import { Location, Range, TextDocument, Uri } from "coc.nvim";
 import { MyMap, MySet } from "../utils/collections";
 import { Attribute, Attributes, parseAttributes } from "./attribute";
 import { DataType } from "./dataType";

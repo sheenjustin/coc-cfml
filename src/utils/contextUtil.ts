@@ -1,6 +1,6 @@
 
 import * as path from "path";
-import { CharacterPair, Position, Range, TextDocument, Uri } from "vscode";
+import { CharacterPair, Position, Range, TextDocument, Uri } from "coc.nvim";
 import { COMPONENT_EXT, isScriptComponent } from "../entities/component";
 import { getTagPattern, parseTags, Tag, TagContext } from "../entities/tag";
 import { cfmlCommentRules, CommentContext, CommentType } from "../features/comment";

@@ -1,7 +1,7 @@
 import * as path from "path";
 import { DataType } from "./dataType";
 import { Scope, unscopedPrecedence } from "./scope";
-import { Location, TextDocument, Range, Uri, Position, WorkspaceConfiguration, workspace } from "vscode";
+import { Location, TextDocument, Range, Uri, Position, WorkspaceConfiguration, workspace } from "coc.nvim";
 import { getCfScriptRanges, isCfcFile, getClosingPosition } from "../utils/contextUtil";
 import { Component, getApplicationUri, getServerUri, COMPONENT_EXT } from "./component";
 import { UserFunction, UserFunctionSignature, Argument, getLocalVariables, UserFunctionVariable, parseScriptFunctionArgs, functionValuePattern, isUserFunctionVariable } from "./userFunction";

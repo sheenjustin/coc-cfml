@@ -1,4 +1,4 @@
-import { workspace, SnippetString, Uri } from "vscode";
+import { workspace, SnippetString, Uri } from "coc.nvim";
 
 interface Config {
   gap: boolean;
